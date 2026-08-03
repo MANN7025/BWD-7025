@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Subject List</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        ol > li { cursor: pointer; margin: 10px 0; font-weight: bold; color: #0066cc; }
+        ol > li div { display: none; margin-top: 5px; font-weight: normal; color: #333; }
+        ol > li.show div { display: block; }
+    </style>
+</head>
+<body>
+
+    <ol>
+        <li onclick="this.classList.toggle('show')">
+            MATHS
+            <div>Algebra, Geometry, Calculus</div>
+        </li>
+        <li onclick="this.classList.toggle('show')">
+            SCINCE
+            <div>Physics, Chemistry, Biology</div>
+        </li>
+    </ol>
+
+</body>
+</html>
