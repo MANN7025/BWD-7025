@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Elements Demo</title>
+    
+    ```
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    ```
+    
+    </head>
+    
+    <body>
+    
+    ```
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+    
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container my-5">
+    
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 text-primary">Bootstrap Elements Demo</h1>
+            <p class="lead">
+                A simple webpage demonstrating commonly used Bootstrap components.
+            </p>
+        </div>
+    
+        <!-- Alert -->
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> Bootstrap is working correctly.
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+            ></button>
+        </div>
+    
+        <!-- Buttons -->
+        <section class="mb-5">
+            <h2>Buttons</h2>
+    
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-outline-dark">Outline</button>
+        </section>
+    
+        <!-- Cards -->
+        <section class="mb-5">
+            <h2 class="mb-3">Cards</h2>
+    
+            <div class="row g-4">
+    
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Card One</h5>
+                            <p class="card-text">
+                                This is an example of a Bootstrap card component.
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Two</h5>
+                            <p class="card-text">
+                                Bootstrap cards are useful for displaying content.
+                            </p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Card Three
+                                <span class="badge bg-danger">New</span>
+                            </h5>
+                            <p class="card-text">
+                                This card demonstrates the Bootstrap badge element.
+                            </p>
+                            <a href="#" class="btn btn-warning">View</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    
+        <!-- Form -->
+        <section class="mb-5">
+            <h2>Form</h2>
+    
+            <form class="p-4 border rounded shadow-sm">
+    
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter your name"
+                    >
+                </div>
+    
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+                </div>
+    
+                <div class="mb-3">
+                    <label for="course" class="form-label">Select Course</label>
+                    <select class="form-select" id="course">
+                        <option selected>Choose a course</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>Bootstrap</option>
+                        <option>JavaScript</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3 form-check">
+                    <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="terms"
+                    >
+                    <label class="form-check-label" for="terms">
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+    
+            </form>
+        </section>
+    
+        <!-- Table -->
+        <section class="mb-5">
+            <h2>Table</h2>
+    
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Rahul</td>
+                            <td>HTML</td>
+                            <td>
+                                <span class="badge bg-success">Completed</span>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>2</td>
+                            <td>Priya</td>
+                            <td>CSS</td>
+                            <td>
+                                <span class="badge bg-warning text-dark">Pending</span>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>3</td>
+                            <td>Amit</td>
+                            <td>Bootstrap</td>
+                            <td>
+                                <span class="badge bg-info text-dark">In Progress</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    
+        <!-- Progress Bar -->
+        <section class="mb-5">
+            <h2>Progress Bar</h2>
+    
+            <div class="progress" role="progressbar">
+                <div class="progress-bar bg-success" style="width: 75%;">
+                    75%
+                </div>
+            </div>
+        </section>
+    
+        <!-- Modal -->
+        <section class="mb-5">
+            <h2>Modal</h2>
+    
+            <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+            >
+                Open Modal
+            </button>
+        </section>
+    
+    </div>
+    
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Bootstrap Modal
+                    </h5>
+    
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                    ></button>
+                </div>
+    
+                <div class="modal-body">
+                    This is an example of a Bootstrap modal component.
+                </div>
+    
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Close
+                    </button>
+    
+                    <button type="button" class="btn btn-primary">
+                        Save Changes
+                    </button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">
+            &copy; 2026 Bootstrap Elements Demo
+        </p>
+    </footer>
+    
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    ```
+    
+    </body>
+    </html>
+    
+</body>
+</html>l
