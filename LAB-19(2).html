@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+</head>
+ <center><body>
+    <style>
+        body {
+            font-style: oblique;
+  background: linear-gradient(to right, red 10%, blue 90%);
+}
+    font-size   : 100px; font-family : "Times New Roman", Times, serif;
+.sharp-stripes {
+
+  background: linear-gradient(to right, red 50%, blue 50%);
+}
+
+
+    </style>
+    <h2>Personal Details Form</h2>
+
+    <form>
+        Name:
+        <input type="text" id="name"><br><br>
+
+        Age:
+        <input type="number" id="age"><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        City:
+        <input type="text" id="city"><br><br>
+
+        State:
+        <input type="text" id="state"><br><br>
+
+        Country:
+        <input type="text" id="country"><br><br>
+
+        <input type="button" value="Submit"
+               onclick="showDetails()">
+    </form>
+
+    <script>
+        function showDetails() {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let gender = document.querySelector(
+                'input[name="gender"]:checked'
+            );
+            let city = document.getElementById("city").value;
+            let state = document.getElementById("state").value;
+            let country = document.getElementById("country").value;
+
+            alert(
+                "Personal Details\n" +
+                "Name: " + name + "\n" +
+                "Age: " + age + "\n" +
+                "Gender: " + (gender ? gender.value : "Not selected") + "\n" +
+                "City: " + city + "\n" +
+                "State: " + state + "\n" +
+                "Country: " + country
+            );
+        }
+    </script>
+
+</body></center>
+</html>
