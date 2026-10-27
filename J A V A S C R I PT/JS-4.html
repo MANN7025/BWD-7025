@@ -1,0 +1,22 @@
+<!-- WAP TAKE INPUT FROM USER TO CHECK THE NO IS ARMSTRONG OR NOT -->                                                  
+<html>
+    <body>
+    <script>
+    let n = parseInt(prompt("Enter a number:"));
+    let temp = n;
+    let sum = 0;
+    
+    while(temp > 0)
+    {
+        let r = temp % 10;
+        sum = sum + (r * r * r);
+        temp = parseInt(temp / 10);
+    }
+    
+    if(sum == n)
+        document.write("Armstrong Number");
+    else
+        document.write("Not Armstrong Number");
+    </script>
+    </body>
+    </html>

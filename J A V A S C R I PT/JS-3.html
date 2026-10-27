@@ -1,0 +1,34 @@
+<!-- WAP JS  TO CHECK A MULTIPLE CONDITION FOR A NO ODD OR EVEN PRIME OR NOT  -->
+<html>
+    <body align="center">
+    <script>
+    let n = parseInt(prompt("Enter a number:"));
+    
+    if(n % 2 == 0)
+        document.write("Number is Even<br>");
+    else
+        document.write("Number is Odd<br>");
+    
+    let prime = true;
+    
+    if(n <= 1)
+        prime = false;
+    else
+    {
+        for(let i = 2; i < n; i++)
+        {
+            if(n % i == 0)
+            {
+                prime = false;
+                break;
+            }
+        }
+    }
+    
+    if(prime)
+        document.write("Number is Prime");
+    else
+        document.write("Number is Not Prime");
+    </script>
+    </body>
+    </html>
